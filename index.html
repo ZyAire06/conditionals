@@ -10,7 +10,28 @@
 
 
 <body>
-   <video src="assets/videos/Jellyfish - 110877.mp4" > </video> 
+   <video src="" > </video> 
    <button>On/Off</button>
+
+
+    <script>
+
+        const myName= 'ZyAire';
+        myName= 'kev';
+
+        let isPowerOn = false;
+        let powerBtn = document. querySelector('button');
+        let video= document. querySelector('video');
+        console.log(powerBtn);
+
+        powerBtn.addEventListener('click', powerOn);
+
+        function powerOn() {
+            console.log(`powerBtn was clicked`);
+            video.setAttribute('src', 'assets/videos/Jellyfish - 110877.mp4');
+            video.play();
+        }
+
+    </script>
 </body>
 </html>
